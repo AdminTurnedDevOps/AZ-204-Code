@@ -1,10 +1,10 @@
 param(
-    [string]$scaleSetName = 'az204sub',
-    [string]$resourceGroupName = 'az-204',
+    [string]$scaleSetName,
+    [string]$resourceGroupName,
     [string]$publicIPName = $($scaleSetName + '-dns'),
     [string]$loadBalancerName = $($scaleSetName + '-lb'),
-    [string]$vNetName = 'az204',
-    [string]$subnetName = 'az204sub',
+    [string]$vNetName,
+    [string]$subnetName,
     [string]$image = 'UbuntuLTS'
 )
 
